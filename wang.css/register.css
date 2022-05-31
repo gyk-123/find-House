@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  height: 3.5rem;
+  width: 100%;
+  background: url(../images/index/logo.jpg) no-repeat 14% 50%;
+  background-size: 8rem 2.8rem;
+  background-color: #FF8A00;
+}
+header ul {
+  float: right;
+  width: 35%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 5%;
+}
+header ul li {
+  width: 20%;
+  height: 50%;
+  list-style: none;
+}
+header ul li img {
+  display: inline-block;
+  width: 1.5rem;
+  height: 2rem;
+  margin-top: 0.8rem;
+}
