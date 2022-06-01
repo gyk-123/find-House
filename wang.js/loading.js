@@ -12,6 +12,7 @@ var htop = document.getElementsByClassName('htop')[0]
 var load = document.getElementsByClassName('load')[0]
 var verify = document.getElementsByClassName('verify')[0]
 
+var div = document.getElementsByClassName('div')[0];
 
 
 // 点击换模块
@@ -22,6 +23,8 @@ htop.firstElementChild.ontouchstart = function () {
     htop.lastElementChild.style.borderBottomColor = '#D1D1D1';
     load.style.display = 'block';
     verify.style.display = 'none';
+    div.style.display = 'block';
+
 
 
 }
@@ -34,6 +37,8 @@ htop.lastElementChild.ontouchstart = function () {
     htop.firstElementChild.style.borderBottomColor = '#D1D1D1';
     verify.style.display = 'block';
     load.style.display = 'none';
+    div.style.display = 'none';
+
 }
 
 
@@ -94,14 +99,20 @@ report.ontouchstart = function () {
 
 }
 // 重新点击输入手机号
-for (let i = 0; i < phone.length; i++) {
-    phone[i].ontouchstart = function () {
-        this.value = '';
-        this.style.color = '#757575';
-        this.value = document.getElementsByClassName('phone')[i].value;
 
-    }
+phone[0].ontouchstart = function () {
+    phone[0].value = '';
+    phone[0].style.color = '#757575';
+    phone[0].value = document.getElementsByClassName('phone')[0].value;
+
 }
+phone[1].ontouchstart = function () {
+    phone[1].value = '';
+    phone[1].style.color = '#757575';
+    phone[1].value = document.getElementsByClassName('phone')[1].value;
+
+}
+
 
 verify.ontouchstart = function () {
     if (phone[1].value.length == 0 && report.value.length == 0) {
@@ -117,19 +128,7 @@ verify.ontouchstart = function () {
 
     }
 }
-load.ontouchstart = function () {
-    if (phone[0].value.length == 0 && pwd.value.length == 0) {
 
-        alert('内容不能为空')
-    } else if (/^(0|86|17951)?(13[0-9]|15[012356789]|166|17[3678]|18[0-9]|14[57])[0-9]{8}$/.test(phone[0].value) == false || /^\w{6,}$/.test(pwd.value) == false) {
-        alert('请输入正确的手机号或密码，密码不能少于6位，只能有字母、数字和下划线组成')
-    }
-    else {
-        alert('登录成功')
-        location.href = "#";
-
-    }
-}
 
 // 普通登录手机辨认
 phone[0].onblur = function () {
@@ -140,3 +139,37 @@ phone[0].onblur = function () {
     }
 
 }
+
+
+
+load.ontouchstart = function () {
+    // 记住密码
+    var remepwd = document.getElementById('remepwd').checked;
+
+    if (remepwd == true) {
+        localStorage.setItem('phone', phone[0].value);
+        localStorage.setItem('pwd_v', pwd.value);
+        localStorage.setItem('isrem', remepwd);
+    } else {
+        localStorage.removeItem('phone');
+        localStorage.removeItem('pwd_v');
+        localStorage.removeItem('isrem');
+    }
+
+    // 登录设置
+    if (phone[0].value.length == 0 && pwd.value.length == 0) {
+
+        alert('内容不能为空')
+    } else if (/^(0|86|17951)?(13[0-9]|15[012356789]|166|17[3678]|18[0-9]|14[57])[0-9]{8}$/.test(phone[0].value) == false || /^\w{6,}$/.test(pwd.value) == false) {
+        alert('请输入正确的手机号或密码，密码不能少于6位，只能有字母、数字和下划线组成')
+    }
+    else {
+        sessionStorage.setItem('username', phone[0].value)
+        alert('登录成功')
+        location.href = "http://127.0.0.1:5500/wang/welcome.html";
+
+    }
+}
+
+
+

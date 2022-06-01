@@ -18,9 +18,9 @@
         </ul>
     </header>
     <main>
-        <p><span>首页</span>>我的</p>
+        <p><span>首页</span>>北京租房>房源信息</p>
         <div class="bgc"><img src="../images/my/urse2.png" alt="">
-            <p>欢迎你， 18686868686</p>
+            <p>欢迎你， <span class="value">18686868686</span></p>
         </div>
         <ul>
             <li><a href="#">我关注的房源</a></li>
@@ -38,6 +38,8 @@
 <script src="../wang.js/index.js"></script>
 <script>
     var tui = document.getElementsByClassName('tui')[0];
+    var value = document.getElementsByClassName('value')[0];
+    value.innerHTML = sessionStorage.getItem('username');
     tui.ontouchstart = function () {
         var real = confirm('您确定退出吗');
         if (real) {

@@ -61,16 +61,24 @@ pwd.ontouchstart = function () {
 }
 var reg = document.getElementsByClassName('reg')[0];
 reg.ontouchstart = function () {
-    if (pwd.value.length != 0 && report.value.length != 0 && phone.value.length != 0) {
+    var str1 = /^(0|86|17951)?(13[0-9]|15[012356789]|166|17[3678]|18[0-9]|14[57])[0-9]{8}$/;
+    var phone_v = document.getElementsByClassName('phone')[0].value;
+    var pwd_v = document.getElementsByClassName('pwd')[0].value;
+    var report_v = document.getElementsByClassName('report')[0].value
 
+
+    if (pwd_v.length == 0 && report_v.length == 0 && phone_v.length == 0) {
         alert('内容不能为空')
-    } else if (/^(0|86|17951)?(13[0-9]|15[012356789]|166|17[3678]|18[0-9]|14[57])[0-9]{8}$/.test(phone.value) == false || /^\w{6,}$/.test(pwd.value) == false || report.value == 666666) {
+    } else if (str1.test(phone_v) == false || /^\w{6,}$/.test(pwd_v) == false || report_v != 666666) {
         alert('请输入正确的手机号、验证码或密码，密码不能少于6位，只能有字母、数字和下划线组成')
 
     }
     else {
+        localStorage.setItem('tnumber', document.getElementsByClassName('phone')[0].value)
+        localStorage.setItem('pwd', document.getElementsByClassName('pwd')[0].value)
         alert('注册成功')
         location.href = "http://127.0.0.1:5500/wang/loadind.html"
 
     }
+    console.log();
 }

@@ -95,6 +95,13 @@ footer {
   background-color: #F5F5F5;
   border-bottom: 1px solid #DFDFE1;
 }
+footer div {
+  display: block;
+  text-indent: 1rem;
+  font-size: 0.8rem;
+  color: gray;
+  overflow: hidden;
+}
 footer button {
   width: 90%;
   height: 3rem;
