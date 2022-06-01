@@ -5,129 +5,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="">
-    <script src=""></script>
-    <style>
-        *{
-           margin: 0;
-           padding: 0;
-       }
-       html{
-           font-size: 10px
-       }
-       .footer{
-      width: 100%;
-      height: 20rem;
-      background-color: #444;
-      display: flex;
-      flex-direction: column;
-      padding: 1rem;
-      box-sizing: border-box;
-  }
-  .footer .f1{
-      flex: 1.5;
-      /* background-color: #FF8A00; */
-      border-bottom: 1px solid rgb(52, 41, 41);
-      font-size: 1.8rem;
-      line-height: 4rem;
-      text-indent: 2rem;
-      font-weight: 600;
-      color: #999;
-  }
- 
-  .footer .f2{
-      flex: 4;
-      display: flex;
-  }
-  .footer .f2 .phone{
-      flex: 1;
-      /* background-color: #FF8A00; */
-      display: flex;
+    <title>房源信息</title>
+    <link rel="stylesheet" href="../guo.css/housemessage.css">
 
-  }
-  .footer .phone .logo{
-      flex: 2;
-      background: url(./../images/index/apple.png) no-repeat 20px 20px;
-      /* background-color: rgb(181, 37, 37); */
-
-      background-size: 50%;
-  }
-  .footer .phone .font{
-      flex: 3;
-      text-align: center;
-  }
-  .footer .phone .font p,
-  .footer .phone .font span{
-      font-size: 1.8rem;
-       position: relative;
-       top: 2rem;
-       color: #999;
-  }
- /* .and */
-  .footer .f2 .and{
-       flex: 1;
-      /* background-color: #FF8A00; */
-      display: flex;
-  }
-  .footer .and .logo{
-      flex: 2;
-      background: url(./../images/index/android.png) no-repeat 15px 20px;
-      /* background-color: rgb(181, 37, 37); */
-
-      background-size: 50%;
-  }
-  .footer .and .font{
-      flex: 3;
-      text-align: center;
-  }
-  .footer .and .font p,
-  .footer .and .font span{
-      font-size: 1.8rem;
-       position: relative;
-       top: 2rem;
-       color: #999;
-  }
-  .ff{
-      width: 100%;
-      height: 5rem;
-      /* background-color: #FF8A00; */
-      text-align: center;
-      font-size: 1.5rem;
-      color: rgb(133, 124, 124);
-  }
-    
-
-   </style>
 </head>
 
 <body>
+    <header>
+        <ul>
+            <li><img src="../images/index/my.jpg" alt=""></li>
+            <li><img src="../images/index/xiazai.jpg" alt=""></li>
+        </ul>
+    </header>
+    <main>
+        <p><span>首页</span>>北京租房>房源信息</p>
+        <div class="bgc"><span>分享</span> </div>
+        <div class="first"><span>天鹅湾小区精装两居，满五唯一，业主换房急售</span><span><img src="../images/rentalList/xin.png" alt="">
+                <p>关注</p>
+            </span></div>
+
+        <ul class="two">
+            <li><span>租金</span>
+                <p>2300元/月</p>
+            </li>
+            <li><span>房型</span>
+                <p>2室1厅</p>
+            </li>
+            <li><span>面积</span>
+                <p>204平米</p>
+            </li>
+        </ul>
+        <ul class="three">
+            <li><span>楼层：高楼/17层</span><span>朝向：南北</span></li>
+            <li><span>装修：精装</span><span>供暖：集体供暖</span></li>
+            <li><span>年代：2007年</span><span>楼型：板楼</span></li>
+        </ul>
+    </main>
+    <div class="bg">
+        <div>
+            <p>经纪人房评</p>
+            <p>地理位置：京都国际处于酒仙桥中心地带，毗邻北京三大商圈，紧邻丽都3商圈，隔四环与望京商圈相望，西南紧挨燕莎商圈，地理位置优越，周边配套：颐提港商业中心，隔四环与望京商圈相望，西南紧挨燕莎商圈，地理位置优越，周边配套：颐提港商业中心...
+            </p>
+        </div>
+        <div>
+            <p>看房客户记录</p>
+            <p>近一个月新增0位看房客户，共50位
+            </p>
+        </div>
+        <div>
+            <p>位置及周边</p>
+            <div>
+                <div>
+                    <p>地址：[黄村]时代龙和</p>
+                    <img src="../images/rentalList/map.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>小区成交历史</p>
+            <p>
+                <span>3室2厅， 146平米， <span>5000元</span>
+                </span>
+                <span>签约日期：2015-02-26</span>
+            </p>
+        </div>
+    </div>
+    <ul class="person">
+        <li><img src="../images/rentalList/man.png" alt=""></li>
+        <li><span>张三</span><span>4001581855转0008</span></li>
+        <li><img src="../images/rentalList/icon1.png" alt=""></li>
+        <li><img src="../images/rentalList/icon2.png" alt=""></li>
+
+
+    </ul>
+
+    <!-- 底部页面 -->
     <div class="footer">
         <div class="f1">
             北京找房无忧 > 首页
         </div>
         <div class="f2">
-          <div class="phone">
-             <div class="logo"></div>
-             <div class="font">
-                <p>iPhone</p>
-                <span>客户端</span>
-             </div>
-          </div>
-          <div class="and">
-              <div class="logo"></div>
-              <div class="font">
-                 <p>Android</p>
-                 <span>客户端</span>
-              </div>
-          </div>
+            <div class="phone">
+                <div class="logo"></div>
+                <div class="font">
+                    <p>iPhone</p>
+                    <span>客户端</span>
+                </div>
+            </div>
+            <div class="and">
+                <div class="logo"></div>
+                <div class="font">
+                    <p>Android</p>
+                    <span>客户端</span>
+                </div>
+            </div>
         </div>
-        
+
         <div class="ff">
-       <p>北京找房无忧房地产经纪有限公司</p>
-       <p>网络经营许可证号京ICP备2020-2022</p>
+            <p>北京找房无忧房地产经纪有限公司</p>
+            <p>网络经营许可证号京ICP备2020-2022</p>
         </div>
-     </div>
+    </div>
+
 </body>
 
 </html>
+<script src="../wang.js/index.js"></script>

@@ -5,13 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="">
-    <script src=""></script>
+    <title>登录页面</title>
+    <link rel="stylesheet" href="../wang.css/loadstyle.css">
+
 </head>
 
 <body>
 
+    <header>
+        <ul>
+            <li><img src="../images/my/urse.png" alt=""><span>我的</span></li>
+            <li><img src="../images/my/down.png" alt=""><span>APP</span></li>
+        </ul>
+        <div>
+            <p> <img src="../images/my/urse2.png" alt=""></p>
+            <button class="load">登录</button>
+        </div>
+    </header>
+    <main>
+        <ul>
+            <li><a href="#">我关注的房源</a></li>
+            <li><a href="#">我关注的小区</a></li>
+            <li><a href="#">我关注的新房</a></li>
+            <li><a href="#">我的看房记录</a></li>
+        </ul>
+    </main>
+    <footer></footer>
+
+
 </body>
 
 </html>
+<script src="../wang.js/index.js"></script>
+<script>
+    var load = document.getElementsByClassName('load')[0];
+    load.ontouchstart = function () {
+        location.href = 'http://127.0.0.1:5500/wang/loadind.html';
+    }
+</script>
