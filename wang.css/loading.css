@@ -37,11 +37,21 @@ main p {
 main p span:first-of-type {
   font-weight: 700;
 }
+main .htop {
+  display: flex;
+  border-top: 2px solid #E5E5E5;
+}
+main .htop span {
+  padding: 1rem 0;
+  width: 50%;
+  text-align: center;
+  border-bottom: 0.5rem solid #D1D1D1;
+}
+main .htop span:first-of-type {
+  border-bottom-color: #FF8A00;
+}
 main ul {
   width: 100%;
-}
-main ul li:first-of-type {
-  position: relative;
 }
 main ul li:last-of-type input {
   border-bottom: 2px solid #E5E5E5;
@@ -69,7 +79,17 @@ main ul li button {
   border: 1px solid #DCDCDC;
   color: #666666;
 }
+main .first {
+  display: block;
+}
+main .second {
+  display: none;
+}
+main .second li:first-of-type {
+  position: relative;
+}
 footer {
+  padding-top: 0.5rem;
   width: 100%;
   height: 20rem;
   background-color: #F5F5F5;
@@ -84,4 +104,27 @@ footer button {
   background-color: #FF8A00;
   color: white;
   font-size: 1rem;
+}
+footer .load {
+  display: block;
+}
+footer .verify {
+  display: none;
+}
+footer ul {
+  width: 90%;
+  margin: 1rem 1.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+footer ul li {
+  list-style: none;
+}
+footer ul li a {
+  text-decoration: none;
+  color: #6E6E6E;
+  font-size: 0.1rem;
+}
+footer ul li .now {
+  color: #FF8A00;
 }
