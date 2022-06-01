@@ -1,0 +1,270 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+html {
+  font-size: 10px;
+}
+header {
+  height: 5rem;
+  width: 100%;
+  background: url(../images/index/logo.jpg) no-repeat 14% 50%;
+  background-size: 8rem 2.8rem;
+  background-color: #FF8A00;
+}
+header ul {
+  float: right;
+  width: 35%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 5%;
+}
+header ul li {
+  width: 20%;
+  height: 50%;
+  list-style: none;
+}
+header ul li img {
+  display: inline-block;
+  width: 2rem;
+  height: 2.5rem;
+  margin-top: 1.3rem;
+}
+main {
+  width: 100%;
+}
+main p {
+  padding: 0.7rem 1rem;
+  font-size: 0.9rem;
+}
+main p span:first-of-type {
+  font-weight: 700;
+}
+main .bgc {
+  width: 100%;
+  height: 21rem;
+  background: url(../images/rentalList/banner.png) no-repeat;
+  text-align: center;
+  color: white;
+  background-size: cover;
+  position: relative;
+  overflow-x: hidden;
+}
+main .bgc span {
+  position: absolute;
+  display: inline-block;
+  right: -1rem;
+  bottom: 1rem;
+  width: 7rem;
+  height: 5rem;
+  line-height: 5rem;
+  border-radius: 1rem;
+  background-color: rgba(20, 18, 18, 0.6);
+}
+main .first {
+  display: flex;
+  border-bottom: 2px solid #E7E7E7;
+}
+main .first span:first-of-type {
+  width: 75%;
+  font-size: 1.9rem;
+  font-weight: 800;
+  padding: 1rem 0.5rem;
+}
+main .first span:last-of-type {
+  width: 25%;
+  text-align: center;
+  border-left: 2px solid #E7E7E7;
+}
+main .first span:last-of-type img {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  margin-top: 1.2rem;
+}
+main .first span:last-of-type p {
+  color: #6D696A;
+}
+main .two {
+  width: 100%;
+  background-color: #F5F5F5;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  text-align: center;
+  border-bottom: 2px solid #E7E7E7;
+}
+main .two li {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2.5rem;
+  border-right: 1px solid #E2E2E2;
+}
+main .two li p {
+  color: #FF8A00;
+  font-size: 1.2rem;
+}
+main .two li:last-of-type {
+  border: none;
+}
+main .three {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid #E7E7E7;
+}
+main .three li {
+  margin: 0 auto;
+  width: 90%;
+  border-bottom: 1px solid #E2E2E2;
+  padding: 2rem 0;
+}
+main .three li span {
+  display: inline-block;
+  width: 40%;
+  margin-left: 2rem;
+  font-size: 1.4rem;
+}
+.bg {
+  background-color: #F5F5F5;
+  overflow: hidden;
+}
+.bg > div {
+  width: 90%;
+  margin: 1rem auto;
+  border: 1px solid #DDDDDD;
+  background-color: #fff;
+}
+.bg > div > p:first-of-type {
+  font-size: 2rem;
+  color: #FF961C;
+  font-weight: 800;
+  text-indent: 1rem;
+  padding: 1rem 0;
+  background: url(../images/rentalList/right.png) no-repeat 95% 50%;
+  background-size: 1rem 1.5rem;
+  border-bottom: 1px solid #DDDDDD;
+}
+.bg > div > p:last-of-type {
+  padding: 1rem 0.8rem;
+}
+.bg div:nth-of-type(3) > div {
+  width: 100%;
+  padding: 1rem 1rem;
+}
+.bg div:nth-of-type(3) > div > div {
+  border: 1px solid #DDDDDD;
+  width: 91%;
+}
+.bg div:nth-of-type(3) > div > div p {
+  margin: 0.5rem 0.5rem;
+  font-weight: 800;
+}
+.bg div:nth-of-type(3) > div > div img {
+  display: inline-block;
+  width: 100%;
+}
+.bg div:nth-of-type(4) > p:last-of-type {
+  display: flex;
+  flex-direction: column;
+}
+.bg div:nth-of-type(4) > p:last-of-type span:first-of-type {
+  margin-bottom: 2rem;
+}
+.bg div:nth-of-type(4) > p:last-of-type span:first-of-type span {
+  color: #FF961C;
+}
+.person {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem 0.5rem;
+}
+.person li img {
+  width: 80%;
+}
+.person li:first-of-type {
+  width: 15%;
+}
+.person li:first-of-type img {
+  width: 100%;
+}
+.person li:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+}
+.footer {
+  width: 100%;
+  height: 20rem;
+  background-color: #444;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+.footer .f1 {
+  flex: 1.5;
+  /* background-color: #FF8A00; */
+  border-bottom: 1px solid #342929;
+  font-size: 1.8rem;
+  line-height: 4rem;
+  text-indent: 2rem;
+  font-weight: 600;
+  color: #999;
+}
+.footer .f2 {
+  flex: 4;
+  display: flex;
+}
+.footer .f2 .phone {
+  flex: 1;
+  /* background-color: #FF8A00; */
+  display: flex;
+}
+.footer .phone .logo {
+  flex: 2;
+  background: url(../images/index/apple.png) no-repeat 20px 20px;
+  /* background-color: rgb(181, 37, 37); */
+  background-size: 50%;
+}
+.footer .phone .font {
+  flex: 3;
+  text-align: center;
+}
+.footer .phone .font p,
+.footer .phone .font span {
+  font-size: 1.8rem;
+  position: relative;
+  top: 2rem;
+  color: #999;
+}
+/* .and */
+.footer .f2 .and {
+  flex: 1;
+  /* background-color: #FF8A00; */
+  display: flex;
+}
+.footer .and .logo {
+  flex: 2;
+  background: url(../images/index/android.png) no-repeat 15px 20px;
+  /* background-color: rgb(181, 37, 37); */
+  background-size: 50%;
+}
+.footer .and .font {
+  flex: 3;
+  text-align: center;
+}
+.footer .and .font p,
+.footer .and .font span {
+  font-size: 1.8rem;
+  position: relative;
+  top: 2rem;
+  color: #999;
+}
+.ff {
+  width: 100%;
+  height: 5rem;
+  /* background-color: #FF8A00; */
+  text-align: center;
+  font-size: 1.5rem;
+  color: #857c7c;
+}

@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header {
+  height: 5rem;
+  width: 100%;
+  background: url(../images/index/logo.jpg) no-repeat 14% 50%;
+  background-size: 8rem 2.8rem;
+  background-color: #FF8A00;
+}
+header ul {
+  float: right;
+  width: 35%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-right: 5%;
+}
+header ul li {
+  width: 20%;
+  height: 50%;
+  list-style: none;
+}
+header ul li img {
+  display: inline-block;
+  width: 2rem;
+  height: 2.5rem;
+  margin-top: 1.3rem;
+}
+main {
+  width: 100%;
+}
+main p {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+main p span:first-of-type {
+  font-weight: 700;
+}
+main ul {
+  width: 100%;
+}
+main ul li:first-of-type {
+  position: relative;
+}
+main ul li:last-of-type input {
+  border-bottom: 2px solid #E5E5E5;
+}
+main ul li {
+  width: 100%;
+}
+main ul li input {
+  text-indent: 1rem;
+  width: 100%;
+  outline: none;
+  border: none;
+  height: 3.7rem;
+  border-top: 2px solid #E5E5E5;
+  color: #8F8F96;
+}
+main ul li button {
+  position: absolute;
+  top: 0.8rem;
+  right: 2rem;
+  padding: 0.6rem 0.6rem;
+  font-size: 0.6rem;
+  outline: none;
+  background-color: #fff;
+  border: 1px solid #DCDCDC;
+  color: #666666;
+}
+footer {
+  width: 100%;
+  height: 20rem;
+  background-color: #F5F5F5;
+  border-bottom: 1px solid #DFDFE1;
+}
+footer button {
+  width: 90%;
+  height: 3rem;
+  margin: 1rem 1.2rem;
+  outline: none;
+  border: none;
+  background-color: #FF8A00;
+  color: white;
+  font-size: 1rem;
+}

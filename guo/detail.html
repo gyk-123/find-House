@@ -5,13 +5,646 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Detail</title>
     <link rel="stylesheet" href="">
     <script src=""></script>
+    <style>
+        *{
+           margin: 0;
+           padding: 0;
+       }
+       html{
+           font-size: 10px
+       }
+       .footer{
+      width: 100%;
+      height: 20rem;
+      background-color: #444;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      box-sizing: border-box;
+  }
+  .footer .f1{
+      flex: 1.5;
+      /* background-color: #FF8A00; */
+      border-bottom: 1px solid rgb(52, 41, 41);
+      font-size: 1.8rem;
+      line-height: 4rem;
+      text-indent: 2rem;
+      font-weight: 600;
+      color: #999;
+  }
+ 
+  .footer .f2{
+      flex: 4;
+      display: flex;
+  }
+  .footer .f2 .phone{
+      flex: 1;
+      /* background-color: #FF8A00; */
+      display: flex;
+
+  }
+  .footer .phone .logo{
+      flex: 2;
+      background: url(./../images/index/apple.png) no-repeat 20px 20px;
+      /* background-color: rgb(181, 37, 37); */
+
+      background-size: 50%;
+  }
+  .footer .phone .font{
+      flex: 3;
+      text-align: center;
+  }
+  .footer .phone .font p,
+  .footer .phone .font span{
+      font-size: 1.8rem;
+       position: relative;
+       top: 2rem;
+       color: #999;
+  }
+ /* .and */
+  .footer .f2 .and{
+       flex: 1;
+      /* background-color: #FF8A00; */
+      display: flex;
+  }
+  .footer .and .logo{
+      flex: 2;
+      background: url(./../images/index/android.png) no-repeat 15px 20px;
+      /* background-color: rgb(181, 37, 37); */
+
+      background-size: 50%;
+  }
+  .footer .and .font{
+      flex: 3;
+      text-align: center;
+  }
+  .footer .and .font p,
+  .footer .and .font span{
+      font-size: 1.8rem;
+       position: relative;
+       top: 2rem;
+       color: #999;
+  }
+  .ff{
+      width: 100%;
+      height: 5rem;
+      /* background-color: #FF8A00; */
+      text-align: center;
+      font-size: 1.5rem;
+      color: rgb(133, 124, 124);
+  }
+    .hpic{
+        width: 100%;
+        height: 20rem;
+        background: url(./../images/SecondHandList/img.png) ;
+        background-size: contain;
+        background-color: #999;
+        position: relative;
+    }
+    .hpic span{
+        color: white;
+        position: absolute;
+        right: 2rem;
+        bottom: 1rem;
+        font-size: 1.5rem;
+        background-color: rgb(106, 98, 98,.5);
+        display: block;
+        width: 5rem;
+        text-align: center;
+        height: 2rem;
+        border-radius: 40%;
+    }
+    .mes{
+        width: 100%;
+        height: 20rem;
+        /* background-color: #999; */
+        padding: 2rem;
+        box-sizing: border-box;
+    }
+    .mes .money {
+        font-size: 1.8rem;
+        margin: 1.5rem 0;
+    }
+    .mes .money span{
+        color: #b11224;
+        font-weight: 600;
+
+    }
+    .mes .time{
+        font-size: 1.8rem;
+        color: #999;
+    } 
+    .mes .sq{
+        display: inline-block;
+        background-color: rgba(203, 225, 233, 0.5);
+        font-size: 1.8rem;
+        margin-top: 1.5rem;
+        color: rgb(101, 107, 109);
+    }
+    .fenge{
+        width: 100%;
+        height: 1rem;
+        background-color: rgb(199, 195, 195,.3);
+    }
+    .moremes{
+        width: 100%;
+        height:54rem;
+        /* background-color: #999; */
+        padding: 2rem;
+        box-sizing: border-box;
+    }
+    .moremes .lis{
+        height: 6rem;
+        box-sizing: border-box;
+        border-bottom: 1px solid rgb(219, 216, 216);
+    }
+    .moremes .lis p{
+        font-size: 1.8rem;
+        line-height: 6rem;
+        /* text-indent: 1rem; */
+        position: relative;
+    }
+    .moremes .lis p span{
+       position: absolute;
+       right: 0;
+    }
+    .moremes .lis:nth-of-type(2) p span,
+    .moremes .lis:nth-of-type(3) p span{
+       right: 30px;
+    }
+    .moremes .lis:nth-of-type(1) p span,
+    .moremes .lis:nth-of-type(4) p span{
+       right: 14px;
+    }
+    .lisl p {
+            text-align: center;
+          
+            color: #999;
+            font-size: 1.8rem;
+           
+            position: relative;
+            bottom: 2rem;
+    }
+    .special{
+        width: 100%;
+        height: 24rem;
+        /* background-color: #999; */
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        box-sizing: border-box;
+    }
+    .special .f1{
+        flex: 1;
+        /* background-color: #b11224; */
+        border-bottom: 1px solid rgb(198, 188, 188);
+    }
+    .special .f2{
+        flex: 3;
+        /* background-color: antiquewhite; */
+        font-size: 1.4rem;
+        padding-top: 1rem;
+        border-bottom: 1px solid rgb(198, 188, 188);
+    
+
+        
+    }
+    .special .f3{
+        flex: 1;
+        /* background-color: aqua; */
+    }
+    .special .f1 p{
+        font-size: 1.8rem;
+        line-height: 4rem;
+        color: #FF9C6E;
+        font-weight: 600;
+    }
+    .special .f2 p{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        line-height: 3rem;
+    }
+    .special .f3 p{
+        text-align: center;
+        line-height: 4rem;
+        font-size: 1.5rem;
+        color: #999;
+        position: relative;
+        top: 1rem;
+    }
+    .much{
+            width: 100%;
+            height: 58rem;
+            /* background-color: rgb(168, 160, 149); */
+            box-sizing: border-box;
+            padding:0 2rem;
+        }
+        .much .lis{
+            /* box-sizing: border-box; */
+              width: 100%;
+              height: 18rem;
+              /* background-color: antiquewhite; */
+              margin: 3.2px 0;
+              display: flex;
+            border-bottom: 1px solid #FF8A00;
+position: relative;
+        }
+        .much .lis .left{
+            flex: 3;
+            background: url(./../images/index/img1.jpg) no-repeat 5px 25px ;
+            background-size: 90%;
+        }
+        .much .lis .left1{
+            flex: 3;
+            background: url(./../images/index/img2.png) no-repeat 5px 25px ;
+            background-size: 90%;
+        }
+        .much .lis .left2{
+            flex: 3;
+            background: url(./../images/index/img3.png) no-repeat 5px 25px ;
+            background-size: 90%;
+        }
+        .much .lis .right{
+            flex: 7;
+            box-sizing: border-box;
+            /* background-color: #FF8A00; */
+            padding-left: 2rem;
+            padding-top: 1.9rem;
+            padding-right: 2rem;
+        }
+        .lis .right p{
+           margin: 1rem  0;
+           font-size: 1.2rem;
+        }
+        .lis .right p:first-of-type span,
+        .lis .right p:nth-of-type(2) span{
+                float: right;
+        }
+        .lis .right p:first-of-type span{
+            color: #FF8A00;
+            font-weight: 600;
+        }
+       
+        .lis .right p:nth-of-type(2){
+            color: #999;
+        }
+        .lis .right p:nth-of-type(3) span{
+            color: skyblue;
+            background-color: rgba(149, 182, 198, 0.1);
+            height: 2rem;
+            line-height: 2rem;
+        }
+    .seb{
+        width: 100%;
+        height: 5rem;
+        /* background-color: #4e4a44; */
+        padding: 1.5rem;
+        box-sizing: border-box;
+        color: #FF8A00;
+        font-size: 1.8rem;
+        font-weight: 600;
+        border-bottom: 1px solid #FF8A00;
+
+    }
+    .school{
+        width: 100%;
+        height: 42rem;
+        /* background-color: #999; */
+        padding: 0 2rem;
+        box-sizing: border-box;
+    }
+     .school .li{
+         width: 100%;
+         height: 6rem;
+         /* background-color: #FF9C6E; */
+         border-bottom: 1px solid rgb(178, 169, 169);
+     }
+     .school .li:first-of-type{
+         font-size: 2rem;
+         font-weight: 600;
+         line-height: 6rem;
+     }
+     .school .li{
+         line-height: 6rem;
+       font-size: 1.4rem;
+     }
+     .school .li span{
+         color: #999;
+     }
+     .school .li:last-of-type{
+         text-align: center;
+         font-size: 1.6rem;
+     }
+   .position{
+       width: 100%;
+       height: 25rem;
+       /* background-color: #999; */
+       display: flex;
+       flex-direction: column;
+       padding:  2rem;
+       box-sizing: border-box;
+   }
+   .position .p{
+       flex: 1;
+       /* background-color: #FF9C6E; */
+       line-height: 2rem;
+       font-size: 2rem;
+       font-weight: 600;
+       border-bottom: 1px solid rgb(178, 169, 169);
+     margin-bottom: 2rem;
+   }
+   .position .m{
+       flex: 3;
+       background: url(./../images/SecondHandList/map.png) no-repeat;
+       background-size: cover;
+       /* background-color: #b11224; */
+       padding: 2rem;
+      
+   }
+   .sug{
+       width: 100%;
+       height: 5rem;
+       /* background-color: #FF8A00; */
+      padding: 2rem;
+      box-sizing: border-box;
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 2rem;
+   
+    }
+    .much .res{
+        position: absolute;
+        top: 13rem;
+        left: 5rem;
+        background-color: rgb(168, 161, 161,.3);
+        width: 100%;
+        height: 4rem;
+       line-height: 4rem;
+       padding:0 1rem;
+    }
+    .check{
+        width: 100%;
+        height: 3rem;
+        /* background-color: #b11224; */
+        line-height: 5rem;
+        /* text-indent: 2rem; */
+        font-size: 1.8rem;
+   text-align: center;
+   color: #999;
+  position: relative;
+  bottom: 2rem;
+    }
+    .contact{
+        width: 100%;
+        height: 10rem;
+        /* background-color: #FF9C6E; */
+        padding: 2rem;
+        box-sizing: border-box;
+        display: flex;
+        text-align: center;
+        line-height: 6rem;
+        
+    }
+    .contact .c1{
+        flex: 4;
+        background: url(./../images/SecondHandList/user.png) no-repeat 3rem 1rem;
+        background-size: 18%;
+        background-color:#FF8A00;
+        border-radius: 10px;
+  
+    }
+    .contact .c2{
+        flex: 2;
+        background: url(./../images/SecondHandList/xin.png) no-repeat 3rem 1.5rem;
+        background-size: 25%;
+        /* background-color: #b11224; */
+    }
+    .contact .c1 p,
+    .contact .c2 p{
+        position: relative;
+        left: 2rem;
+        color: white;
+        font-size: 1.6rem;
+    }
+    .contact .c2 p{
+        color: #999;
+    }
+   </style>
 </head>
 
 <body>
+    <div class="hpic">
+        <span>1/5</span>
+    </div>
+    <div class="mes">
+    <h1>天鹅湾小区精装两居，满五唯一，</h1>
+    <h1>业主换房急售</h1>
+    <p class="money"> <span>576</span> 万元 (单价:46327元/平) </p>
+    <p class="time">挂牌时间2015年6月20日</p>
+     <span class="sq">学区房</span>
+     <span class="sq">独家</span>
+     <span class="sq">满五唯一</span>
+    </div>
+    <div class="fenge">
 
+    </div>
+    <div class="moremes">
+       <div class="lis">
+           <p>户型：3室2厅 <span>面积：100平</span> </p>
+       </div>
+       <div class="lis">
+        <p>楼层：中楼层 <span>朝向：西南</span> </p>
+       </div>
+       <div class="lis">
+        <p>装修：箱装   <span>楼型：塔楼</span> </p>
+       </div>
+       <div class="lis">
+        <p>年代：2004年   <span>区域：西二旗</span> </p>
+       </div>
+       <div class="lis">
+        <p>首付：123万   <span>月供：15683元</span> </p>
+       </div>
+       <div class="lis">
+        <p>地铁：离西二旗地铁站800米 </p>
+       </div>
+       <div class="lis">
+        <p>小区：珠江帝展</p>
+       </div>
+       <div class="lis">
+        <p>学校：北京市第二实验小学</p>
+       </div>
+      
+       </div>
+      <div class="lisl">
+        <p>更多房源信息</p>
+       </div>
+       <div class="fenge">
+
+     </div>
+     <div class="special">
+        <div class="f1">
+            <p>房源特色</p>
+        </div>
+        <div class="f2">
+         
+              <p> 小区环境优雅，虽处闹市中(小区南200米有美廉美超</p>
+              <p> 市、 西30米有华联商场、星美国际影城、东北角就</p>
+              <p>是大中电器、小区东100米有汇佳幼儿园、昌平实验</p>
+              <p>  一小，昆泰国际大酒...</p>
+        </div>
+        <div class="f3">
+            <p>更多特色</p>
+        </div>
+     </div>
+     <div class="fenge">
+
+    </div>
+    <div class="seb">
+        <p>户型分间</p>
+    </div>
+    <div class="much">
+        <div class="lis">
+            <div class="left">
+                
+            </div>
+            <div class="right">
+                <h1>文化部中间层一层带...</h1>
+                <p> 2室1厅96m²南北 <span class="money">1105万</span></p>
+                <p>红南北里 <span>14268元/平</span> </p>
+                <p> <span>学区房</span>  <span>独家</span> </p>
+            </div>
+        </div>
+        <div class="lis">
+            <div class="left left1">
+                
+            </div>
+            <div class="right">
+                <h1>光大水墨 精装复式...</h1>
+                <p> 2室1厅96m²南北 <span class="money">280万</span></p>
+                <p>红南北里 <span>14268元/平</span> </p>
+                <p> <span>学区房</span>  <span>独家</span> <span>满五唯一</span> </p>
+            </div>
+        </div>
+        <div class="lis">
+            <div class="left left2">
+                
+            </div>
+            <div class="right">
+                <h1>文化部中间层一层带...</h1>
+                <p> 2室1厅96m²南北 <span class="money">320万</span></p>
+                <p>红南北里 <span>14268元/平</span> </p>
+                <p> <span>学区房</span>  <span>独家</span> </p>
+            </div>
+        </div>
+    </div>
+    <div class="fenge">
+
+    </div>
+    <div class="school">
+        <div class="li">对口学校</div>
+        <div class="li"><span>学校名称：</span>北京市第二小学</div>
+        <div class="li"><span>升学方式：</span>直升、派位</div>
+        <div class="li"><span>对口中学：</span>团结湖中学</div>
+        <div class="li"><span>划片小区：</span>3个划片小区 在售房源150套</div>
+        <div class="li"><span>学校特色：</span>包食宿、有校车</div>
+        <div class="li"><span>查看学校详情</div>
+    </div>
+    <div class="fenge">
+
+    </div>
+    <div class="position">
+      <div class="p">位置及周边</div>
+      <div class="m"></div>
+    </div>
+    <div class="fenge">
+
+    </div>
+    <div class="sug">
+    推荐房源
+    </div>
+    <div class="much">
+        <div class="lis">
+            <div class="left">
+                
+            </div>
+            <div class="right">
+                <h1>文化部中间层一层带...</h1>
+                <p> 2室1厅96m²南北 <span class="money">1105万</span></p>
+                <p>红南北里 <span>14268元/平</span> </p>
+                <p> <span>学区房</span>  <span>独家</span> </p>
+            </div>
+            <p class="res">推荐理由：同户型、通风好、采光好</p>
+        </div>
+        <div class="lis">
+            <div class="left left1">
+                
+            </div>
+            <div class="right">
+                <h1>光大水墨 精装复式...</h1>
+                <p> 2室1厅96m²南北 <span class="money">280万</span></p>
+                <p>红南北里 <span>14268元/平</span> </p>
+                <p> <span>学区房</span>  <span>独家</span> <span>满五唯一</span> </p>
+            </div>
+            <p class="res">推荐理由：同户型、通风好、采光好</p>
+        </div>
+        <div class="lis">
+            <div class="left left2">
+                
+            </div>
+            <div class="right">
+                <h1>文化部中间层一层带...</h1>
+                <p> 2室1厅96m²南北 <span class="money">320万</span></p>
+                <p>红南北里 <span>14268元/平</span> </p>
+                <p> <span>学区房</span>  <span>独家</span> </p>
+            </div>
+            <p class="res">推荐理由：同户型、通风好、采光好</p>
+        </div>
+    </div>
+    
+    <div class="check">
+    查看相似房源
+    </div>
+
+
+
+    <div class="footer">
+        <div class="f1">
+            北京找房无忧 > 首页
+        </div>
+        <div class="f2">
+          <div class="phone">
+             <div class="logo"></div>
+             <div class="font">
+                <p>iPhone</p>
+                <span>客户端</span>
+             </div>
+          </div>
+          <div class="and">
+              <div class="logo"></div>
+              <div class="font">
+                 <p>Android</p>
+                 <span>客户端</span>
+              </div>
+          </div>
+        </div>
+        
+        <div class="ff">
+       <p>北京找房无忧房地产经纪有限公司</p>
+       <p>网络经营许可证号京ICP备2020-2022</p>
+        </div>
+     </div>
+     <div class="contact">
+         <div class="c1">
+           <p>  联系经纪人</p>
+         </div>
+         <div class="c2">
+             <p>关注</p>
+         </div>
+     </div>
 </body>
 
 </html>
