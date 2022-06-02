@@ -9,7 +9,7 @@ lsecond.ontouchstart=function(){
 }
 var lthird=document.querySelector('.lthird')
 lthird.ontouchstart=function(){
-    window.location.assign("http://127.0.0.1:5500/find-house/guo/search.htm")
+    window.location.assign("http://127.0.0.1:5500/find-house/guo/search.html")
 }
 var lfourth=document.querySelector('.lfourth')
 lfourth.ontouchstart=function(){
