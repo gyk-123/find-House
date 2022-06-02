@@ -77,7 +77,7 @@ reg.ontouchstart = function () {
         localStorage.setItem('tnumber', document.getElementsByClassName('phone')[0].value)
         localStorage.setItem('pwd', document.getElementsByClassName('pwd')[0].value)
         alert('注册成功')
-        location.href = "http://127.0.0.1:5500/wang/loadind.html"
+        location.href = "../wang/loadind.html"
 
     }
     console.log();
