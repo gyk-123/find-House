@@ -13,7 +13,7 @@
 <body>
     <header>
         <ul>
-            <li><img src="../images/index/my.jpg" alt=""></li>
+            <li ><img src="../images/index/my.jpg" alt=""></li>
             <li><img src="../images/index/xiazai.jpg" alt=""></li>
         </ul>
     </header>
@@ -36,6 +36,7 @@
 
 </html>
 <script src="../wang.js/index.js"></script>
+
 <script>
     var tui = document.getElementsByClassName('tui')[0];
     var value = document.getElementsByClassName('value')[0];
@@ -43,7 +44,13 @@
     tui.ontouchstart = function () {
         var real = confirm('您确定退出吗');
         if (real) {
-            location.href = 'http://127.0.0.1:5500/wang/loadstyle.html';
+            location.href = 'http://127.0.0.1:5501/find-house/wang/loadstyle.html';
         }
     }
+    // 回到主页
+    var home=document.getElementsByTagName('header')[0].children[0].children[0];
+    console.log(home);
+    home.addEventListener('click',function(){
+        window.location.assign("http://127.0.0.1:5501/find-house/index.html")
+    })
 </script>

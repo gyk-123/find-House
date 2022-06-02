@@ -40,6 +40,12 @@
 <script>
     var load = document.getElementsByClassName('load')[0];
     load.ontouchstart = function () {
-        location.href = 'http://127.0.0.1:5500/wang/loadind.html';
+        location.href = 'http://127.0.0.1:5501/find-house/wang/loadind.html';
     }
+     // 回到主页
+     var home=document.getElementsByTagName('header')[0].children[0].children[0];
+    console.log(home);
+    home.addEventListener('click',function(){
+        window.location.assign("http://127.0.0.1:5501/find-house/index.html")
+    })
 </script>

@@ -166,7 +166,7 @@ load.ontouchstart = function () {
     else {
         sessionStorage.setItem('username', phone[0].value)
         alert('登录成功')
-        location.href = "http://127.0.0.1:5500/wang/welcome.html";
+        location.href = "http://127.0.0.1:5501/find-house/wang/welcome.html";
 
     }
 }
