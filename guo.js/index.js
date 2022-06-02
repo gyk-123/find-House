@@ -5,15 +5,15 @@ lone.addEventListener('click',function(){
 
 var lsecond=document.querySelector('.lsecond')
 lsecond.ontouchstart=function(){
-    window.location.assign("./../guo/detail.html")
+    window.location.assign("http://127.0.0.1:5500/find-house/guo/detail.html")
 }
 var lthird=document.querySelector('.lthird')
 lthird.ontouchstart=function(){
-    window.location.assign("./../guo/housemessage.html")
+    window.location.assign("http://127.0.0.1:5500/find-house/guo/housemessage.htm")
 }
 var lfourth=document.querySelector('.lfourth')
 lfourth.ontouchstart=function(){
-    window.location.assign("./../guo/like.html")
+    window.location.assign("http://127.0.0.1:5500/find-house/guo/like.html")
 }
 
 
