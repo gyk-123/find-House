@@ -1,6 +1,6 @@
 var lone=document.querySelector('.lone');
 lone.addEventListener('click',function(){
-     window.location.assign("./../guo/beijing.html")
+     window.location.assign("http://127.0.0.1:5500/find-house/guo/beijing.html")
 })
 
 var lsecond=document.querySelector('.lsecond')
